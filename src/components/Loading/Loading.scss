@@ -1,0 +1,29 @@
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading-items {
+  //   background-color: rgb(225, 225, 225);
+  background: linear-gradient(to top left, #e4e4e4, rgb(212, 212, 212));
+  animation: loadingAnimation 1s infinite linear;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background: linear-gradient(to top left, #e4e4e4, rgb(212, 212, 212));
+    opacity: 0.1;
+  }
+  20% {
+    background: linear-gradient(to center, #e4e4e4, rgb(212, 212, 212));
+    opacity: 0.3;
+  }
+  50% {
+    background: linear-gradient(to center, #e4e4e4, rgb(212, 212, 212));
+    opacity: 0.7;
+  }
+  100% {
+    background: linear-gradient(to top left, #e4e4e4, rgb(212, 212, 212));
+    opacity: 1;
+  }
+}
