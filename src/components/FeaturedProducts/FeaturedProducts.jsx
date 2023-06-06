@@ -11,7 +11,7 @@ const FeaturedProducts = ({ type }) => {
     "/products"
   );
 
-  const typeData = data.filter((item) => item.type == type);
+  const typeData = data?.filter((item) => item.type == type);
 
   return (
     <div className="featured-products">
