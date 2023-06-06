@@ -7,8 +7,11 @@ import Loading from "../Loading/Loading";
 
 const FeaturedProducts = ({ type }) => {
   const { data, loading, error } = useFetch(
-    `/products?populate=*&[filters][type][$eq]=${type}`
+    // `/products?populate=*&[filters][type][$eq]=${type}`
+    "/products"
   );
+
+  const typeData = data.filter((item) => item.type == type);
 
   return (
     <div className="featured-products">
@@ -22,7 +25,7 @@ const FeaturedProducts = ({ type }) => {
         ) : loading ? (
           <Loading width={220} height={400} content={[1, 2, 3, 4]} />
         ) : (
-          data?.map((item) => <Card item={item} key={item.id} />)
+          typeData?.map((item) => <Card item={item} key={item.id} />)
         )}
       </div>
     </div>
