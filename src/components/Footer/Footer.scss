@@ -1,9 +1,22 @@
+@import "/src/app.scss";
+
 .footer {
   margin: 100px 100px 20px 100px;
+
+  @media only screen and (max-width: $bp-md) {
+    margin: 100px 50px 20px 50px;
+  }
+  @media only screen and (max-width: $bp-xsm) {
+    margin: 100px 30px 20px 30px;
+  }
 
   .top {
     display: flex;
     gap: 30px;
+
+    @media only screen and (max-width: $bp-sm) {
+      flex-wrap: wrap;
+    }
 
     .item {
       display: flex;
@@ -32,9 +45,15 @@
 
   .bottom {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
+
+    @media only screen and (max-width: $bp-md) {
+      justify-content: center;
+    }
+
     .left {
       display: flex;
       align-items: center;
@@ -61,8 +80,15 @@
       }
     }
     .right {
+      @media only screen and (max-width: $bp-sm) {
+        margin-top: 2rem;
+      }
       img {
         height: 50px;
+
+        @media only screen and (max-width: $bp-sm) {
+          height: 30px;
+        }
       }
     }
   }

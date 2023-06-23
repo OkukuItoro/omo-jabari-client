@@ -1,3 +1,5 @@
+@import "/src/app.scss";
+
 .contact {
   background-color: #2879fe;
   color: white;
@@ -10,6 +12,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-md) {
+      width: 70%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+    }
+    .text-cta {
+      @media only screen and (max-width: $bp-sm) {
+        display: none;
+      }
+    }
 
     input {
       padding: 10px;
@@ -28,6 +45,10 @@
     .icons {
       display: flex;
       gap: 10px;
+
+      @media only screen and (max-width: $bp-sm) {
+        display: none;
+      }
     }
   }
 }

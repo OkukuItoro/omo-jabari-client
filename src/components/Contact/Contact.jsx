@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="wrapper">
-        <span>BE IN TOUCH WITH US:</span>
+        <span className="text-cta">BE IN TOUCH WITH US:</span>
         <div className="mail">
           <input type="text" placeholder="Enter your e-mail..." />
           <button>JOIN US</button>

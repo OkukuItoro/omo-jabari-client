@@ -5,7 +5,7 @@ import "./Categories.scss";
 const Categories = () => {
   return (
     <div className="categories" id="categories">
-      <div className="col">
+      <div className="first-col">
         <div className="row">
           <img
             src="https://images.pexels.com/photos/818992/pexels-photo-818992.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
@@ -15,7 +15,7 @@ const Categories = () => {
             <button>Pants</button>
           </Link>
         </div>
-        <div className="row">
+        <div className="row special-row">
           <img
             src="https://images.pexels.com/photos/2036646/pexels-photo-2036646.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
             alt="women category"
