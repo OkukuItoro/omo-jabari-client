@@ -1,9 +1,6 @@
 import React from "react";
-import useFetch from "../../hooks/useFetch";
 
 const CategoryHome = ({ id }) => {
-  //   const { catData, catLoading, catError } = useFetch(`/categories?populate=*`);
-  //   console.log(catData);
   return (
     <div>
       {id == 1 && (
