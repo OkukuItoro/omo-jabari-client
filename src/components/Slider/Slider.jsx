@@ -21,29 +21,20 @@ const Slider = () => {
   };
 
   /*   Include a set timeout function for next slide */
-  /*
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 3000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     nextSlide();
+  //   }, 3000);
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-*/
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
 
   return (
     <div className="slider">
-      <div
-        className="container"
-        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-      >
-        <img src={data[0]} alt="hero image" />
-        <img src={data[1]} alt="hero image" />
-        <img src={data[2]} alt="hero image" />
-        <img src={data[3]} alt="hero image" />
-        <img src={data[4]} alt="hero image" />
+      <div className="container">
+        <img src={data[currentSlide]} alt="hero image" />
       </div>
       <div className="icons">
         <div className="icon" onClick={prevSlide}>
