@@ -1,6 +1,12 @@
+@import "/src/app.scss";
+
 .products {
   padding: 30px 50px;
   display: flex;
+
+  @media only screen and (max-width: $bp-sm) {
+    padding: 30px;
+  }
 
   .left {
     flex: 1;
@@ -14,6 +20,7 @@
       h2 {
         font-weight: 400;
         margin-bottom: 20px;
+        font-size: 1.8rem;
       }
 
       .inputItem {
@@ -21,6 +28,7 @@
 
         label {
           margin-left: 10px;
+          font-size: 1.2rem;
         }
       }
     }
@@ -33,6 +41,25 @@
       height: 300px;
       object-fit: cover;
       margin-bottom: 50px;
+
+      @media only screen and (max-width: $bp-sm) {
+        height: 150px;
+        margin-block: 25px;
+      }
+    }
+
+    .filters {
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .item-category {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 50%;
+        font-size: 1.3rem;
+      }
     }
   }
 }

@@ -1,9 +1,15 @@
+@import "/src/app.scss";
+
 .card {
   width: 240px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 50px;
+
+  // @media only screen and (max-width: $bp-lg) {
+  //   width: 190px;
+  // }
 
   .image {
     width: 100%;
