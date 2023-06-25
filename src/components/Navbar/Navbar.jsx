@@ -115,22 +115,22 @@ const Navbar = () => {
       {viewportWidth < 990
         ? showMenu && (
             <div className="alt-menu">
-              <div className="item">
+              <div onClick={() => setShowMenu(!showMenu)} className="item">
                 <Link className="link" to="/">
                   Home
                 </Link>
               </div>
-              <div className="item">
+              <div onClick={() => setShowMenu(!showMenu)} className="item">
                 <a className="link" href="#contact">
                   About
                 </a>
               </div>
-              <div className="item">
+              <div onClick={() => setShowMenu(!showMenu)} className="item">
                 <a className="link" href="#contact">
                   Contact
                 </a>
               </div>
-              <div className="item">
+              <div onClick={() => setShowMenu(!showMenu)} className="item">
                 <a className="link" href="#categories">
                   Categories
                 </a>
