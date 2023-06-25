@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import "./Products.scss";
 import useFetch from "../../hooks/useFetch";
 import CategoryHome from "../../components/CategoryHome/CategoryHome";
+import ScrollToTopOnMount from "../../../utils/ScrollToTop";
 
 const Products = () => {
   const catId = parseInt(useParams().id);
@@ -42,6 +43,7 @@ const Products = () => {
 
   return (
     <div className="products">
+      <ScrollToTopOnMount />
       {viewportWidth > 990 && (
         <div className="left">
           <div className="filterItem">

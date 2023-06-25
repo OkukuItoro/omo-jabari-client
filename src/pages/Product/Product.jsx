@@ -5,6 +5,7 @@ import useFetch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartReducer";
+import ScrollToTopOnMount from "../../../utils/ScrollToTop";
 
 const Product = () => {
   const id = useParams().id;
@@ -16,6 +17,7 @@ const Product = () => {
 
   return (
     <div className="product">
+      <ScrollToTopOnMount />
       {loading ? (
         "loading"
       ) : (
