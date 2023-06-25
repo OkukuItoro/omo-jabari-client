@@ -15,7 +15,7 @@ const Categories = () => {
             <button>Pants</button>
           </Link>
         </div>
-        <div className="row special-row">
+        <div className="row">
           <img
             src="https://images.pexels.com/photos/2036646/pexels-photo-2036646.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
             alt="women category"
@@ -65,6 +65,7 @@ const Categories = () => {
           <img
             src="https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg?auto=compress&cs=tinysrgb&w=800&dpr=1"
             alt="shoes category"
+            style={{ marginRight: "1rem" }}
           />
           <Link className="link" to="/products/1">
             <button>Shoes</button>

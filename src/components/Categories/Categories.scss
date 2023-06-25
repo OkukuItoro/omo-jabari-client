@@ -14,6 +14,10 @@
     }
   }
 
+  @media only screen and (max-width: $bp-xsm) {
+    margin: 10px;
+  }
+
   .first-col {
     flex: 1;
     display: flex;
@@ -23,13 +27,6 @@
     @media only screen and (max-width: $bp-md) {
       flex-direction: row;
       gap: 10px;
-    }
-
-    .special-row {
-      margin-left: 1rem;
-      @media only screen and (max-width: $bp-md) {
-        margin-left: 0;
-      }
     }
   }
 
@@ -47,7 +44,6 @@
   .row {
     flex: 1;
     display: flex;
-    gap: 10px;
     position: relative;
     overflow: hidden;
 
@@ -67,6 +63,11 @@
       border: none;
       background-color: #fff;
       text-transform: uppercase;
+
+      @media only screen and (max-width: $bp-xxsm) {
+        min-width: 20px;
+        height: 30px;
+      }
 
       &:hover {
         background-color: teal;
